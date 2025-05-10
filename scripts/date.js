@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Atualiza o ano atual
+  
   const currentYearSpan = document.getElementById("currentyear");
   if (currentYearSpan) {
     const currentYear = new Date().getFullYear();
     currentYearSpan.textContent = currentYear;
   }
 
-  // Atualiza a data e hora atual
+  
   const lastModifiedParagraph = document.getElementById("lastModified");
   if (lastModifiedParagraph) {
     const currentDate = new Date();

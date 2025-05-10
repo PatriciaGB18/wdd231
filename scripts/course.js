@@ -10,15 +10,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const courseButtonsContainer = document.querySelector(".course-buttons");
   const filterButtons = document.querySelectorAll(".filter-buttons button");
-  const totalCreditsElement = document.querySelector("#totalCredits"); // Elemento para mostrar o total de créditos
+  const totalCreditsElement = document.querySelector("#totalCredits"); 
 
-  // Função para calcular e exibir o total de créditos
+  
   function calculateTotalCredits() {
     const totalCredits = courses
-      .filter(course => course.completed)  // Filtra os cursos completados
-      .reduce((acc, course) => acc + course.credits, 0); // Soma os créditos dos cursos completados
+      .filter(course => course.completed)  
+      .reduce((acc, course) => acc + course.credits, 0); 
 
-    // Exibe o total de créditos
+    
     if (totalCreditsElement) {
       totalCreditsElement.textContent = `Total Credits: ${totalCredits}`;
     }
@@ -28,13 +28,13 @@ document.addEventListener("DOMContentLoaded", () => {
     courseButtonsContainer.innerHTML = "";
     filteredCourses.forEach(course => {
       const button = document.createElement("button");
-      button.textContent = `${course.code} (${course.credits} credits)`;  // Exibe o código do curso e os créditos
+      button.textContent = `${course.code} (${course.credits} credits)`;  
 
-      // Adicionando classe baseada no código do curso
+      
       if (course.code.startsWith("CSE")) {
         button.classList.add("cse");
       } else if (course.code === "WDD 231") {
-        button.classList.add("w231");  // Classe específica para WDD 231
+        button.classList.add("w231");  
       } else {
         button.classList.add("wdd");
       }
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
       courseButtonsContainer.appendChild(button);
     });
     
-    // Recalcula o total de créditos após a exibição dos cursos
+    
     calculateTotalCredits();
   }
 
@@ -58,12 +58,12 @@ document.addEventListener("DOMContentLoaded", () => {
       } else if (filter === "WDD") {
         filteredCourses = courses.filter(course => course.code.startsWith("WDD"));
       } else {
-        filteredCourses = courses; // Todos
+        filteredCourses = courses; 
       }
       displayCourses(filteredCourses);
     });
   });
 
-  // Exibe todos os cursos por padrão
+  
   displayCourses(courses);
 });

@@ -13,7 +13,7 @@
 @media (max-width: 768px) {
     .hamburger {
         display: block;
-        /* Exibe o botão hambúrguer */
+        
     }
 
     .navbar .menu {
@@ -25,7 +25,7 @@
 
     .navbar .menu.active {
         display: flex;
-        /* Mostra o menu quando ativo */
+        
     }
 }
 
@@ -34,12 +34,12 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    /* Espaçamento entre os botões */
+    
 }
 
 .nav-item {
     background-color: #ebe69f;
-    /* Cor de fundo do botão */
+    
     transition: background 0.3s, color 0.3s;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -50,7 +50,7 @@
     color: black;
     font-weight: bold;
     display: block;
-    /* Faz o link preencher o botão */
+    
 }
 
 .nav-item:hover {
@@ -58,7 +58,7 @@
     color: black;
 }
 
-/* Ajustes para telas menores */
+
 @media (max-width: 768px) {
     .hamburger {
         display: block;
