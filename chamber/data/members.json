@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Esperança Hotel",
+            "image": "images/hotel.webp",
+            "address": "Av. das Cataratas, 1500 - Foz do Iguaçu",
+            "phone": "+55 (45) 99800-1234",
+            "website": "https://esperancahotel.com.br",
+            "membership": "gold"
+        },
+        {
+            "name": "Flor do Caribe Restaurante",
+            "image": "images/restaurante.webp",
+            "address": "Rua Brasil, 789 - Centro",
+            "phone": "+55 (45) 99700-5678",
+            "website": "https://flordocariberestaurante.com.br",
+            "membership": "silver"
+        },
+        {
+            "name": "Caminho das Indias Turismo",
+            "image": "images/turismo.webp",
+            "address": "Av. Paraná, 1200 - Vila A",
+            "phone": "+55 (45) 99600-3030",
+            "website": "https://caminhodasindiasturismo.com",
+            "membership": "bronze"
+        },
+        {
+            "name": "Vale Tudo Tec",
+            "image": "images/eletronicos.webp",
+            "address": "Shopping Central, Loja 10",
+            "phone": "+55 (45) 99400-2222",
+            "website": "https://valetudotec.com",
+            "membership": "silver"
+        },
+        {
+            "name": "Avenida Brasil Agência de Viagens",
+            "image": "images/agencia.webp",
+            "address": "Rua Tarobá, 500 - Centro",
+            "phone": "+55 (45) 99300-4444",
+            "website": "https://avenidabrasilviagens.com",
+            "membership": "gold"
+        },
+        {
+            "name": "Sassaricando Cafeteria",
+            "image": "images/coffe.webp",
+            "address": "Parque Nacional do Iguaçu",
+            "phone": "+55 (45) 99200-1111",
+            "website": "https://sassaricandocafe.com.br",
+            "membership": "bronze"
+        },
+        {
+            "name": "Saramandaia Eventos",
+            "image": "images/events.webp",
+            "address": "Av. República Argentina, 777",
+            "phone": "+55 (45) 99100-5555",
+            "website": "https:/saramandaiaeventos.com",
+            "membership": "gold"
+        }
+    ]
+}

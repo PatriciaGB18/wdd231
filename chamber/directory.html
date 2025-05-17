@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Foz do Iguaçu Chamber of Commerce Directory</title>
+    <meta name="description" content="Directory of member businesses of the Foz do Iguaçu Chamber of Commerce." />
+    <meta name="author" content="Patricia" />
+
+    <link rel="icon" href="../images/favicon.ico" />
+
+    <meta property="og:title" content="Foz do Iguaçu Chamber Directory" />
+    <meta property="og:description"
+        content="Discover local businesses in Foz do Iguaçu with the Chamber of Commerce directory." />
+    <meta property="og:image" content="images/og-image.jpg" />
+    <meta property="og:url" content="https://yourwebsite.com/chamber/directory.html" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/cataratas.webp" alt="Foz do Iguaçu Chamber Logo" class="header-logo">
+        </div>
+        <div class="header-center">
+            <h1>Foz do Iguaçu Chamber of Commerce</h1>
+        </div>
+        <div class="header-right">
+            <button id="menu-toggle" class="menu-button">☰</button>
+            <nav id="mobile-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="info-cards" class="info-cards">
+            <div class="info-card" id="events-card">
+                <h2>Events</h2>
+
+            </div>
+            <div class="info-card" id="current-weather-card">
+                <h2>Current Weather</h2>
+                <p>Temperature: 25°C</p>
+                <p>Humidity: 70%</p>
+                <p>Wind: 10 km/h NE</p>
+                <p>Conditions: Mostly Sunny</p>
+            </div>
+            <div class="info-card" id="forecast-card">
+                <h2>Weather Forecast</h2>
+                <p>Tomorrow: High 28°C, Low 18°C, Partly Cloudy</p>
+                <p>Day 3: High 26°C, Low 17°C, Likely Showers</p>
+                <p>Day 4: High 27°C, Low 16°C, Sunny</p>
+            </div>
+        </section>
+        <section id="view-toggle">
+            <button id="gridViewBtn">Grid View</button>
+            <button id="listViewBtn">List View</button>
+        </section>
+        <section id="members-container" class="grid-view">
+            <div id="members-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-endereco">
+            <p>Endereço: 123 Main St, Foz do Iguaçu, Paraná</p>
+            <p>Contato: contact@fozcommerce.com | Telefone: +55 (45) 99999-9999</p>
+        </div>
+
+        <div class="footer-img">
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook3.webp" alt="Facebook"></a>
+                <a href="#"><img src="images/twitter3.webp" alt="Twitter"></a>
+                <a href="#"><img src="images/instagram3.webp" alt="Instagram"></a>
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <p>Patricia Barros | WDD 231 <span class="verified">&#10004;</span></p>
+            <p id="lastModified"></p>
+            <p>&copy; <span id="year"></span> Foz do Iguaçu Chamber of Commerce</p>
+        </div>
+    </footer>
+
+
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+
+</body>
+
+</html>

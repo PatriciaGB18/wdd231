@@ -1,0 +1,28 @@
+{
+    "family_name": "Silva",
+    "date_moved_in": "2024-08-10",
+    "number_of_members": 4,
+    "visited_by_bishopric": true,
+    "members": [
+        {
+            "name": "João Silva",
+            "gender": "Male",
+            "birthdate": "1985-05-12"
+        },
+        {
+            "name": "Maria Silva",
+            "gender": "Female",
+            "birthdate": "1987-09-22"
+        },
+        {
+            "name": "Lucas Silva",
+            "gender": "Male",
+            "birthdate": "2010-03-15"
+        },
+        {
+            "name": "Ana Silva",
+            "gender": "Female",
+            "birthdate": "2013-07-09"
+        }
+    ]
+}

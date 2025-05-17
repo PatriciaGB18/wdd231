@@ -1,0 +1,250 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #003566;
+    color: white;
+}
+
+.header-left,
+.header-center,
+.header-right {
+    flex: 1;
+}
+
+.header-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-center {
+    display: flex;
+    justify-content: center;
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-logo {
+    width: 75px;
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li a {
+    background-color: #007BFF;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+#current-weather-card,
+#forecast-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+#current-weather-card h2,
+#forecast-card h2 {
+    align-self: center;
+}
+
+#current-weather-card p,
+#forecast-card p {
+    margin: 0.5em 0;
+    width: 100%;
+    text-align: left;
+}
+
+.weather-icon {
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.weather-icon img {
+    width: 50px;
+    height: auto;
+}
+
+#members-container.grid-view #members-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+#members-container.list-view #members-list {
+    display: block;
+}
+
+#members-container.list-view .member-card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+#members-container.list-view .member-card img {
+    max-width: 120px;
+    margin-right: 1rem;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.info-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#view-toggle {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+#members-container {
+    padding: 1rem;
+}
+
+.member-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.member-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.member-card a {
+    display: block;
+    margin-top: 0.5rem;
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.member-card.gold {
+    border: 2px solid goldenrod;
+}
+
+.member-card.silver {
+    border: 2px solid silver;
+}
+
+.member-card.bronze {
+    border: 2px solid peru;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #003566;
+    color: white;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-endereco {
+    flex: 1;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+.footer-img {
+    flex: 1;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.social-icons img {
+    width: 32px;
+    height: auto;
+}
+
+.footer-info {
+    flex: 1;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-endereco,
+    .footer-img,
+    .footer-info {
+        width: 100%;
+        text-align: left;
+        margin-top: 1rem;
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 601px) {
+    .menu-button {
+        display: none;
+    }
+}
+
+.header-logo {
+    width: 150px;
+    height: auto;
+}
+
+.social-icons img {
+    width: 32px;
+    height: auto;
+}
