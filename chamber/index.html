@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Foz do Iguaçu Chamber of Commerce</title>
+    <meta name="description"
+        content="Welcome to the Foz do Iguaçu Chamber of Commerce. Supporting businesses and our community." />
+    <meta name="author" content="Patricia" />
+
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/cataratas.webp" alt="Foz do Iguaçu Chamber Logo" class="header-logo">
+        </div>
+        <div class="header-center">
+            <h1>Foz do Iguaçu Chamber of Commerce</h1>
+        </div>
+        <div class="header-right">
+            <button id="menu-toggle" class="menu-button">☰</button>
+            <nav id="mobile-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="banner">
+        <img src="images/cataratasre.webp" alt="City View" class="banner-image">
+    </div>
+
+    <main>
+        <section class="card-container">
+            <div class="card" id="events-card">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li><strong>June 10, 2025</strong> — Main Hall</li>
+                    <li><strong>June 25, 2025</strong> — Conference Room</li>
+                    <li><strong>July 5, 2025</strong> — Outdoor Stage</li>
+                </ul>
+            </div>
+            <div id="weather-widget"></div>
+        </section>
+    </main>
+    <section id="spotlight-container" class="card-section">
+    </section>
+    <footer>
+        <div class="footer-endereco">
+            <p>Endereço: 123 Main St, Foz do Iguaçu, Paraná</p>
+            <p>Contato: contact@fozcommerce.com | Telefone: +55 (45) 99999-9999</p>
+        </div>
+        <div class="footer-img">
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook3.webp" alt="Facebook"></a>
+                <a href="#"><img src="images/twitter3.webp" alt="Twitter"></a>
+                <a href="#"><img src="images/instagram3.webp" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-info">
+            <p>Patricia Barros | WDD 231 <span class="verified">&#10004;</span></p>
+            <p id="lastModified"></p>
+            <p>&copy; <span id="year"></span> Foz do Iguaçu Chamber of Commerce</p>
+        </div>
+    </footer>
+
+
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            var menu = document.getElementById("mobile-menu");
+            menu.classList.toggle("active");
+        });
+    </script>
+
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+
+</body>
+
+</html>

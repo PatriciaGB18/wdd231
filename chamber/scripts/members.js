@@ -1,11 +1,11 @@
 async function loadMembers() {
   try {
     const response = await fetch('data/members.json');
-    const data = await response.json();  // pega o objeto completo
-    const members = data.members;         // pega o array de membros
+    const data = await response.json();  
+    const members = data.members;        
 
     const container = document.getElementById('members-list');
-    container.innerHTML = '';  // limpa antes de adicionar
+    container.innerHTML = '';  
 
     members.forEach(member => {
       const card = document.createElement('div');

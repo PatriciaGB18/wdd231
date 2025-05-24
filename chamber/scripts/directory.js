@@ -59,26 +59,31 @@ listViewBtn.addEventListener('click', () => {
 
 loadMembers();
 
-
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.getElementById("menu-toggle");
   const mobileMenu = document.getElementById("mobile-menu");
 
-  menuToggle.addEventListener("click", function () {
-    mobileMenu.classList.toggle("active");
+  if (menuToggle && mobileMenu) {
+    mobileMenu.classList.remove("active");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.innerHTML = "☰";
 
-    if (mobileMenu.classList.contains("active")) {
-      menuToggle.innerHTML = "✖"; 
-    } else {
-      menuToggle.innerHTML = "☰"; 
-    }
-  });
+    menuToggle.addEventListener("click", function (event) {
+      event.stopPropagation();
+      const isExpanded = mobileMenu.classList.contains("active");
+      mobileMenu.classList.toggle("active");
+      menuToggle.setAttribute("aria-expanded", !isExpanded);
+      menuToggle.innerHTML = mobileMenu.classList.contains("active") ? "✖" : "☰";
+    });
 
-  document.addEventListener("click", function (event) {
-    if (!menuToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
-      mobileMenu.classList.remove("active");
-      menuToggle.innerHTML = "☰"; 
-    }
-  });
+    document.addEventListener("click", function (event) {
+      if (!menuToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
+        mobileMenu.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.innerHTML = "☰";
+      }
+    });
+  } else {
+    console.error("Elementos menu-toggle ou mobile-menu não encontrados no DOM.");
+  }
 });
-
