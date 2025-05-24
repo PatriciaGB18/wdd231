@@ -255,9 +255,9 @@ footer {
     gap: 1.5rem;
     padding: 1rem;
     justify-content: space-evenly;
-    /* alinhar à esquerda */
+    
     flex-wrap: wrap;
-    /* se tela pequena, empilha */
+    
 }
 
 .card {
@@ -268,7 +268,7 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: left;
-    /* deixar o card compacto, largura mínima e máxima */
+    
     min-width: 500px;
     max-width: 350px;
 }
@@ -295,14 +295,14 @@ footer {
     color: #007BFF;
     text-decoration: none;
     font-weight: 600;
-    align-self: left;
+    align-self:flex-start;
 }
 
 .card a:hover {
     text-decoration: underline;
 }
 
-/* Para a imagem do clima ficar centralizada e pequena */
+
 .weather-icon img {
     width: 60px;
     height: auto;
@@ -310,7 +310,7 @@ footer {
     display: block;
 }
 
-/* Responsividade: se for celular, empilha */
+
 @media (max-width: 600px) {
     .card-container {
         flex-direction: column;
@@ -329,9 +329,9 @@ footer {
     gap: 1.5rem;
     padding: 1rem;
     justify-content: center;
-    /* centraliza os cards no container */
+    
     flex-wrap: wrap;
-    /* permite quebrar linha em telas pequenas */
+    
 }
 
 .spotlight-card {
@@ -341,9 +341,9 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     flex: 1 1 280px;
-    /* flex-grow, flex-shrink, base width */
+    
     max-width: 320px;
-    /* largura máxima do card */
+    
     display: flex;
     flex-direction: column;
     align-items: center;
