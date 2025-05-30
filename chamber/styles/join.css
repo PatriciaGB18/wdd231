@@ -1,0 +1,408 @@
+
+
+
+.form-and-cards {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+
+form.join-form fieldset {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1.5rem 1rem 2rem 1rem;
+    margin-bottom: 1.5rem;
+    background-color: #fafafa;
+}
+
+
+form.join-form legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+    color: #023047;
+}
+
+
+form.join-form label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #219ebc;
+}
+
+
+form.join-form input[type="text"],
+form.join-form input[type="email"],
+form.join-form input[type="tel"],
+form.join-form select,
+form.join-form textarea {
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    border: 1px solid #219ebc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+
+form.join-form input[type="text"]:focus,
+form.join-form input[type="email"]:focus,
+form.join-form input[type="tel"]:focus,
+form.join-form select:focus,
+form.join-form textarea:focus {
+    outline: none;
+    border-color: #ffb703;
+    box-shadow: 0 0 5px #ffb703;
+}
+
+
+form.join-form button[type="submit"] {
+    background-color: #fb8500;
+    color: rgb(0, 0, 0);
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form.join-form button[type="submit"]:hover,
+form.join-form button[type="submit"]:focus {
+    background-color: #ffb703;
+}
+
+
+form.join-form textarea {
+    resize: vertical;
+}
+
+
+@media (max-width: 480px) {
+    .form-and-cards {
+        padding: 0 0.5rem;
+    }
+}
+
+
+
+.thankyou-main {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 1rem;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: inherit;
+    color: #023047;
+}
+
+.thankyou-main h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.thankyou-main p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    color: #01161b;
+}
+
+.thankyou-main a.back-home-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #4d8cde;
+    color: black !important;
+    
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.thankyou-main a.back-home-link:hover,
+.thankyou-main a.back-home-link:focus {
+    color: black !important;
+    
+    background-color: #79b0f8;
+    
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal[hidden] {
+    display: none;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #219ebc;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #023047;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #0c0b0a;
+}
+
+
+button, .menu-button {
+  cursor: pointer;
+  background-color: #219ebc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6em 1.4em;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+button:hover, .menu-button:hover {
+  background-color: #023047;
+}
+
+button:focus, .menu-button:focus {
+  outline: 3px solid #e9e9e9;
+  outline-offset: 2px;
+}
+
+
+.membership-card button.open-modal {
+  background-color: #6fc8f1;
+  color: black;  
+  padding: 0.5em 1em;
+  font-size: 0.9rem;
+ 
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.membership-card button.open-modal:hover {
+  background-color: #e6e3dc;
+  color: #023047; 
+}
+
+
+
+form.join-form {
+  background-color: white;
+  padding: 1.5em 2em;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin-bottom: 2em;
+}
+
+form.join-form fieldset {
+  border: none;
+  margin-bottom: 1.5em;
+}
+
+form.join-form label {
+  display: block;
+  margin-bottom: 1em;
+  font-weight: 600;
+  color: #023047;
+}
+
+form.join-form input[type="text"],
+form.join-form input[type="email"],
+form.join-form input[type="tel"],
+form.join-form select,
+form.join-form textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+form.join-form input[type="text"]:focus,
+form.join-form input[type="email"]:focus,
+form.join-form input[type="tel"]:focus,
+form.join-form select:focus,
+form.join-form textarea:focus {
+  border-color: #219ebc;
+  outline: none;
+}
+
+
+.membership-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5em;
+  max-width: 1000px;
+}
+
+.membership-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5em 1em;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+.membership-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 48, 71, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1em;
+}
+
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 12px;
+  max-width: 480px;
+  width: 100%;
+  padding: 2em;
+  position: relative;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  animation: fadeInScale 0.3s ease forwards;
+}
+
+
+.modal-content .close-modal {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #023047;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.modal-content .close-modal:hover,
+.modal-content .close-modal:focus {
+  color: #fb8500;
+  outline: none;
+}
+
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.modal[hidden] {
+  display: none;
+}
+#mobile-menu[hidden] {
+  display: none !important;
+}
+
+#mobile-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  
+  #mobile-menu {
+    display: flex !important;
+  }
+
+  #mobile-menu[hidden] {
+    display: flex !important;  
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+}
+#menu-toggle {
+  background-color: transparent; 
+  border: none;
+  color: rgb(222, 111, 7); 
+  font-size: 1.8rem; 
+  cursor: pointer;
+  box-shadow: none;
+}
+

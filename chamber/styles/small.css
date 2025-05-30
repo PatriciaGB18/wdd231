@@ -68,7 +68,7 @@
     background: none;
     border: none;
     cursor: pointer;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px;
   }
 
@@ -109,7 +109,7 @@
   }
 
   #mobile-menu ul li a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     display: block;
     width: 100%;
