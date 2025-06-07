@@ -255,9 +255,9 @@ footer {
     gap: 1.5rem;
     padding: 1rem;
     justify-content: space-evenly;
-    
+
     flex-wrap: wrap;
-    
+
 }
 
 .card {
@@ -268,7 +268,7 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: left;
-    
+
     min-width: 500px;
     max-width: 350px;
 }
@@ -295,7 +295,7 @@ footer {
     color: #007BFF;
     text-decoration: none;
     font-weight: 600;
-    align-self:flex-start;
+    align-self: flex-start;
 }
 
 .card a:hover {
@@ -329,9 +329,9 @@ footer {
     gap: 1.5rem;
     padding: 1rem;
     justify-content: center;
-    
+
     flex-wrap: wrap;
-    
+
 }
 
 .spotlight-card {
@@ -341,9 +341,9 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     flex: 1 1 280px;
-    
+
     max-width: 320px;
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -404,4 +404,22 @@ footer {
     width: 100%;
     height: 400px;
     object-fit: cover;
+}
+
+/* ALL PLACES */
+
+@media only screen and (min-width:64rem) {
+
+    #allplaces {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #allplaces div img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        grid-area: photograph;
+    }
+
 }
