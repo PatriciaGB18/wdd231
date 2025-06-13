@@ -1,0 +1,19 @@
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+  .cards-grid {
+     
+    padding: 1.5rem;
+    gap: 1.2rem;
+  }
+
+  .place-card {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .place-card img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+  }
+}

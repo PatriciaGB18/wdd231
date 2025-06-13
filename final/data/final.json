@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Alnwick Castle",
+        "location": "Northumberland, England",
+        "inspiration": "Used as the exterior of Hogwarts in the first two films.",
+        "image": "images/alnwick1.webp"
+    },
+    {
+        "name": "Leadenhall Market",
+        "location": "London, England",
+        "inspiration": "Filming location for Diagon Alley in the first film.",
+        "image": "images/leadenhall2.webp"
+    },
+    {
+        "name": "The Elephant House Café",
+        "location": "Edinburgh, Scotland",
+        "inspiration": "Where J.K. Rowling wrote early drafts of Harry Potter.",
+        "image": "images/theElephant3.webp"
+    },
+    {
+        "name": "Christ Church College",
+        "location": "Oxford, England",
+        "inspiration": "Inspiration for the Hogwarts Great Hall.",
+        "image": "images/college4.webp"
+    },
+    {
+        "name": "Glenfinnan Viaduct",
+        "location": "Scotland",
+        "inspiration": "Famous bridge crossed by the Hogwarts Express.",
+        "image": "images/glenfinnan5.webp"
+    }
+]

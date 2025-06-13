@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="author" content="Patricia Gonçalves" />
+    <title>Contact Us - Magical Places</title>
+    <link rel="stylesheet" href="styles/project.css" />
+    <link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" href="styles/medium.css" media="screen and (min-width: 601px)">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/hogwarts.webp" alt="Magical Places Logo" loading="lazy" />
+            <h1>Magical Places</h1>
+        </div>
+        <nav role="navigation">
+            <button id="menu-button" aria-label="Toggle navigation">&#9776;</button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="places.html">Places</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+                <li><a href="attributions.html" aria-current="page">Attributions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact Us</h2>
+        <form action="form-result.html" method="get" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Magical Places | Created by Patricia Gonçalves</p>
+        <p><a href="attributions.html">Attributions</a></p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script type="module" src="scripts/final.js"></script>
+</body>
+
+</html>

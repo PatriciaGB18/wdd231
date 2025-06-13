@@ -1,0 +1,101 @@
+@media screen and (max-width: 600px) {
+
+    
+    header {
+        position: relative;
+    }
+
+    
+    #menu-button {
+        display: block;
+        position: absolute;
+        top: 6rem;
+        right: 1rem;
+        font-size: 3rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 2;
+        color: var(--accent-color);
+    }
+
+    
+    #nav-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        
+        right: 0;
+        background-color: var(--primary-color);
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        z-index: 1;
+    }
+
+    
+    #nav-menu.open {
+        display: block;
+    }
+
+    
+    #nav-menu li {
+        margin: 0.5rem 0;
+    }
+
+    #nav-menu li a {
+        padding: 0.5rem 1rem;
+        display: block;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+        
+    }
+
+    .place-card img {
+        width: 90%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin: 0.5rem 0;
+        min-height: unset;
+    }
+
+    .place-card h2 {
+        margin: 0.5rem 0;
+        font-size: 1.4rem;
+    }
+
+    h2 {}
+
+    
+    .contact-form {
+        margin: 1.5rem 1rem;
+        padding: 1.5rem;
+        box-shadow: none;
+        
+        border-radius: 0.5rem;
+        font-size: 0.95rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .contact-form button {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 1rem;
+        align-self: stretch;
+    }
+
+}
